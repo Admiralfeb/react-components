@@ -1,16 +1,8 @@
 import img from './construction.png';
-import { makeStyles } from '@material-ui/core';
-
-const useStyles = makeStyles({
-  container: {
-    textAlign: 'center',
-  },
-});
 
 export const UnderConstruction = (props: { title?: string }) => {
-  const classes = useStyles();
   return (
-    <div className={classes.container}>
+    <div style={{ textAlign: 'center' }}>
       <h2 data-testid='title'>{props?.title}</h2>
       <h3>This page is currently under construction.</h3>
       <img
